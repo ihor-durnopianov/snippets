@@ -1,5 +1,5 @@
 {
-    "New file": {
+    "new file": {
         "prefix": "s-init",
         "body": [
             "# -*- coding: utf-8 -*-",
@@ -19,7 +19,7 @@
         ],
         "description": ""
     },
-    "Embedded IPython interpreter": {
+    "embedded interpreter": {
         "prefix": "s-emb",
         "body": [
             "import IPython; IPython.embed()"
@@ -63,7 +63,7 @@
         ],
         "description": ""
     },
-    "Function docstring": {
+    "function docstring": {
         "prefix": "s-fdoc",
         "body": [
             "    \"\"\"Foo.",
@@ -82,7 +82,7 @@
         ],
         "description": ""
     },
-    "Boilerplate for command line arguments parsing": {
+    "boilerplate for command line arguments parsing": {
         "prefix": "s-args",
         "body": [
             "import argparse",
@@ -130,7 +130,7 @@
         ],
         "description": ""
     },
-    "Abstract class": {
+    "abstract class": {
         "prefix": "s-abc",
         "body": [
             "class AbstractBaseClass(object, metaclass=abc.ABCMeta):",
@@ -143,7 +143,7 @@
         "description": ""
     },
     "setup.py by PyPA": {
-        "prefix": "s-sepy",
+        "prefix": "s-sepa",
         "body": [
             "# -*- coding: utf-8 -*-",
             "\"\"\"A setuptools based setup module.",
@@ -360,7 +360,7 @@
         ],
         "description": ""
     },
-    "Notebook lib settings": {
+    "notebook lib settings": {
         "prefix": "s-conf",
         "body": [
             "logging.getLogger().setLevel(\"DEBUG\")",
@@ -388,7 +388,7 @@
         ],
         "description": ""
     },
-    "Templates for decorators": {
+    "templates for decorators": {
         "prefix": "s-dec",
         "body": [
             "import functools",
@@ -420,7 +420,7 @@
         "description": ""
     },
     "setup.py by PyPA, adapted": {
-        "prefix": "s-sepy-2",
+        "prefix": "s-sepa-2",
         "body": [
             "# -*- coding: utf-8 -*-",
             "\"\"\"Simple setup script.\"\"\"",
