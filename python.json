@@ -1,5 +1,5 @@
 {
-    "Initialize new document": {
+    "New file": {
         "prefix": "s-init",
         "body": [
             "# -*- coding: utf-8 -*-",
@@ -19,14 +19,14 @@
         ],
         "description": ""
     },
-    "Embed IPython interpreter": {
+    "Embedded IPython interpreter": {
         "prefix": "s-emb",
         "body": [
             "import IPython; IPython.embed()"
         ],
         "description": ""
     },
-    "Initialize pytest template": {
+    "pytest template": {
         "prefix": "s-test",
         "body": [
             "# -*- coding: utf-8 -*-",
@@ -63,7 +63,7 @@
         ],
         "description": ""
     },
-    "Initialize function docstring": {
+    "Function docstring": {
         "prefix": "s-fdoc",
         "body": [
             "    \"\"\"Foo.",
@@ -82,7 +82,7 @@
         ],
         "description": ""
     },
-    "Write boilerplate for command line arguments parsing": {
+    "Boilerplate for command line arguments parsing": {
         "prefix": "s-args",
         "body": [
             "import argparse",
@@ -130,7 +130,7 @@
         ],
         "description": ""
     },
-    "Make an abstract class": {
+    "Abstract class": {
         "prefix": "s-abc",
         "body": [
             "class AbstractBaseClass(object, metaclass=abc.ABCMeta):",
@@ -142,7 +142,7 @@
         ],
         "description": ""
     },
-    "Copy-paste setup.py by PyPA": {
+    "setup.py by PyPA": {
         "prefix": "s-sepy",
         "body": [
             "# -*- coding: utf-8 -*-",
@@ -360,7 +360,7 @@
         ],
         "description": ""
     },
-    "Paste notebook lib settings": {
+    "Notebook lib settings": {
         "prefix": "s-conf",
         "body": [
             "logging.getLogger().setLevel(\"DEBUG\")",
@@ -388,7 +388,7 @@
         ],
         "description": ""
     },
-    "Bring templates for decorators": {
+    "Templates for decorators": {
         "prefix": "s-dec",
         "body": [
             "import functools",
@@ -419,7 +419,7 @@
         ],
         "description": ""
     },
-    "Adapted setup.py from PyPA": {
+    "setup.py by PyPA, adapted": {
         "prefix": "s-sepy-2",
         "body": [
             "# -*- coding: utf-8 -*-",
