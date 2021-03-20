@@ -1,0 +1,17 @@
+{
+    "Python project template (incomplete)": {
+        "prefix": "s-init",
+        "body": [
+            "* `.gitignore`",
+            "",
+            "```bash",
+            "echo \"# To be ignored by VCS",
+            "",
+            "",
+            "__pycache__/",
+            "*.egg-info/\" > .gitignore",
+            "```"
+        ],
+        "description": ""
+    }
+}
