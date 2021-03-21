@@ -82,7 +82,7 @@
         ],
         "description": ""
     },
-    "boilerplate for command line arguments parsing": {
+    "boilerplate for command line arguments": {
         "prefix": "s-args",
         "body": [
             "import argparse",
@@ -93,7 +93,20 @@
             "",
             "class _Parser(argparse.ArgumentParser):",
             "",
+            "    def __init__(self, *args, **kwargs):",
+            "        kwargs.setdefault(\"description\", __doc__)",
+            "        super().__init__(*args, **kwargs)",
+            "",
             "    def specify_args(self):",
+            "        # Subparsers",
+            "        subparsers = self.add_subparsers(",
+            "            # S.t. one can retrieve it via args.subparser",
+            "            dest=\"subparser\"",
+            "        )",
+            "        subparser = subparsers.add_parser(",
+            "            \"some-subparser\", description=\"subparser-level description\"",
+            "        )",
+            "        subparser.add_argument(\"subparser-arg\")",
             "        # Simple positional",
             "        self.add_argument(",
             "            \"positional\", help=\"help\",",
