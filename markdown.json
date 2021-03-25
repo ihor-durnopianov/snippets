@@ -27,7 +27,7 @@
             "",
             "* `.pylintrc`",
             "",
-            "* Makefile",
+            "* `Makefile`",
             "",
             "    ```bash",
             "    echo \"#",
