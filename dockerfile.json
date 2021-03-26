@@ -1,0 +1,29 @@
+{
+    "Dockerfile example/cheatsheet": {
+        "prefix": "s-dofi",
+        "body": [
+            "#",
+            "",
+            "",
+            "FROM python",
+            "# FROM ubuntu:bionic",
+            "",
+            "WORKDIR /App",
+            "",
+            "RUN pip install Flask",
+            "# RUN apt update \\",
+            "#   && DEBIAN_FRONTEND=noninteractive apt install --yes python3-dev python3-pip git r-base \\",
+            "#   && R -e \"install.packages(c('ggplot2', 'ChannelAttribution'))\"",
+            "",
+            "# RUN python3 -m pip install gunicorn",
+            "",
+            "# COPY requirements.txt .",
+            "# RUN python3 -m pip install --requirement requirements.txt",
+            "",
+            "# # Same as docker run ... {{CMD}}",
+            "# # CMD python -c 'import time, sys; print(\"started\", file=sys.stderr), time.sleep(3), print(\"stopping\", file=sys.stderr)'",
+            "# CMD python -c 'from flask import Flask; Flask(__name__).run()'"
+        ],
+        "description": ""
+    }
+}
