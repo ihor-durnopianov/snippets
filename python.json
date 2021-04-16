@@ -436,7 +436,7 @@
         "prefix": "s-sepa-2",
         "body": [
             "# -*- coding: utf-8 -*-",
-            "\"\"\"Simple setup script.\"\"\"",
+            "\"\"\"Setup script.\"\"\"",
             "",
             "",
             "from setuptools import setup, find_packages",
