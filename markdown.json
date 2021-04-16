@@ -67,7 +67,7 @@
             "* `pytest.ini`",
             "",
             "    ```bash",
-            "    cat << EOF > pylint.ini",
+            "    cat << EOF > pytest.ini",
             "    ;",
             "",
             "",
