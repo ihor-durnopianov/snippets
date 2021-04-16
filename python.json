@@ -59,7 +59,20 @@
             "    (2, 4),",
             "], ids=[\"with one\", \"with two\"])",
             "def test_parametrize(param, expected):",
-            "    assert param ** 2 == expected"
+            "    assert param ** 2 == expected",
+            "",
+            "",
+            "def test_driver_script_saves_passwords_to_csv_and_users_to_database(",
+            "    monkeypatch",
+            "):",
+            "    ...",
+            "    monkeypatch.setattr(",
+            "        sys.modules[\"deliverable.driver\"], \"PASSWORDS_TO_GENERATE\",",
+            "        number_of_passwords",
+            "    )",
+            "    ...",
+            "    monkeypatch.setattr(sqlite3, \"connect\", lambda *args, **kwargs: connection)",
+            ""
         ],
         "description": ""
     },
