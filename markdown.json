@@ -287,5 +287,30 @@
             "```"
         ],
         "description": ""
+    },
+    "AWS Lambda notes": {
+        "prefix": "s-lambda",
+        "body": [
+            "# AWS Lambda",
+            "",
+            "**NOTES**:",
+            "",
+            "* use TDD - applies really well",
+            "* avoid relative imports - result in `Runtime.ImportModuleError: Unable to import module '...': attempted relative import with no known parent package` somehow",
+            "",
+            "```bash",
+            "aws lambda create-function --function-name FUNCTION NAME \\",
+            "    --role AWS ROLE \\",
+            "    --runtime python3.8 \\",
+            "    --handler project/core.lambda_ \\",
+            "    --code S3Bucket=S3 BUCKET,S3Key=S3 KEY",
+            "",
+            "aws lambda update-function-code --function-name FUNCTION NAME \\",
+            "    --s3-bucket S3 BUCKET --s3-key S3 KEY",
+            "",
+            "aws lambda delete-function --function-name FUNCTION NAME",
+            "```"
+        ],
+        "description": ""
     }
 }
