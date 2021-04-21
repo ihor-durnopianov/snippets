@@ -266,6 +266,10 @@
             "```bash",
             "aws kinesis list-streams",
             "",
+            "aws kinesis create-stream --stream-name STREAM NAME --shard-count SHARD COUNT",
+            "",
+            "aws kinesis describe-stream --stream-name STREAM NAME",
+            "",
             "aws kinesis describe-stream-summary --stream-name \\",
             "    STREAM NAME",
             "",
@@ -284,7 +288,10 @@
             "",
             "aws kinesis get-records --shard-iterator \\",
             "    SHARD ITERATOR",
-            "```"
+            "",
+            "aws kinesis delete-stream --stream-name STREAM NAME",
+            "```",
+            ""
         ],
         "description": ""
     },
