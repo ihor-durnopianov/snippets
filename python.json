@@ -655,5 +655,22 @@
             ")"
         ],
         "description": ""
+    },
+    "psycopg2.sql example": {
+        "prefix": "s-psycopg2-sql",
+        "body": [
+            "import psycopg2.sql",
+            "",
+            "",
+            "psycopg2.sql.SQL(\"\"\"",
+            "    insert into {name} ({columns}) values %s",
+            "\"\"\").format(",
+            "    name=psycopg2.sql.Identifier(\"table_name\"),",
+            "    columns=psycopg2.sql.SQL(\",\").join([",
+            "        psycopg2.sql.Identifier(column) for column in dataframe",
+            "    ]),",
+            ")"
+        ],
+        "description": ""
     }
 }
