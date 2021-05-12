@@ -726,5 +726,21 @@
             "    return request.get_json()"
         ],
         "description": ""
+    },
+    "capitalizedwordsize & Co.": {
+        "prefix": "s-cases",
+        "body": [
+            "capitalizedwordsize = lambda line: \"\".join(",
+            "    letter.upper()",
+            "    if previous is None or previous == \" \" else",
+            "    letter",
+            "    for previous, letter in reversed(list(itertools.zip_longest(list(",
+            "        reversed(line))[1:],",
+            "        reversed(line)",
+            "    )))",
+            "    if letter.isalpha()",
+            ")"
+        ],
+        "description": ""
     }
 }
