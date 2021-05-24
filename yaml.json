@@ -99,5 +99,40 @@
             "#        + network stuff if not network_mode == \"host\""
         ],
         "description": ""
+    },
+    "helm release": {
+        "prefix": "s-release",
+        "body": [
+            "# ",
+            "# ",
+            "# Usage:",
+            "# export RELEASE=$TM_FILEPATH \\",
+            "# && export NAMESPACE=$(cat \\$RELEASE | yq .metadata.namespace -r) \\",
+            "# && export CHART_PATH=$(cat \\$RELEASE | yq .spec.chart.path -r) \\",
+            "# && export RELEASE_NAME=$(cat \\$RELEASE | yq .spec.releaseName -r) \\",
+            "# && cat \\$RELEASE | yq -y .spec.values \\",
+            "#     | helm upgrade \\$RELEASE_NAME \\$CHART_PATH --namespace \\$NAMESPACE --values - --install --debug --dry-run",
+            "# ",
+            "# For more info, visit",
+            "# https://docs.fluxcd.io/projects/helm-operator/en/stable/references/helmrelease-custom-resource/#helm.fluxcd.io/v1.HelmReleaseSpec",
+            "apiVersion: helm.fluxcd.io/v1",
+            "kind: HelmRelease",
+            "metadata:",
+            "  name: superset",
+            "  namespace: superset",
+            "spec:",
+            "  chart:",
+            "    git: git@github.com:ihor-durnopianov/superset-helm.git",
+            "    path: .",
+            "    ref: master",
+            "  releaseName: superset",
+            "  values:",
+            "    image:",
+            "      tag: 1.1.0",
+            "    service:",
+            "      port: 8089",
+            ""
+        ],
+        "description": ""
     }
 }
