@@ -1,0 +1,12 @@
+{
+    "create user and db": {
+        "prefix": "s-create-user-n-db",
+        "body": [
+            "-- Replace \"some_name\" and \"some password\"",
+            "create user some_name with encrypted password 'some password';",
+            "create database some_name;",
+            "grant all privileges on database some_name to some_name;"
+        ],
+        "description": ""
+    }
+}
