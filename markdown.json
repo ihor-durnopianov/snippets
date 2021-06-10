@@ -434,5 +434,63 @@
             "```"
         ],
         "description": ""
+    },
+    "K8s dump": {
+        "prefix": "s-k8s-dump",
+        "body": [
+            "# K8s dump",
+            "",
+            "```bash",
+            "k logs --selector KEY=VALUE --container CONTAINER NAME --follow --max-log-requests 6",
+            "k logs -l KEY=VALUE -c CONTAINER NAME -f --max-log-requests 6",
+            "",
+            "k rollout restart deployment DEPLOYMENT NAME",
+            "",
+            "k config view --minify | grep namespace:",
+            "",
+            "k config set-context --current --namespace=NAMESPACE",
+            "",
+            "k port-forward service SERVICE NAME 8088:8080",
+            "",
+            "k wait --for=condition=released helmrelease RELEASE NAME",
+            "```",
+            "",
+            "```bash",
+            "helm list --help",
+            "",
+            "helm install --help",
+            "",
+            "helm repo --help",
+            "",
+            "helm dep --help",
+            "",
+            "helm create --help",
+            "",
+            "helm package --help",
+            "```",
+            ""
+        ],
+        "description": ""
+    },
+    "AWS Athena notes": {
+        "prefix": "s-athena",
+        "body": [
+            "# AWS Athena notes",
+            "",
+            "```sql",
+            "create external table ...",
+            "",
+            "show create table `DATABASE.TABLE`",
+            "",
+            "alter table `DATABASE.TABLE` add partition",
+            "  (KEY = 'VALUE', ...)",
+            "  location 's3://PATH'",
+            "",
+            "show partitions `DATABASE.TABLE`",
+            "",
+            "drop table `DATABASE.TABLE`",
+            "```"
+        ],
+        "description": ""
     }
 }

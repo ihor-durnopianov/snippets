@@ -170,6 +170,8 @@
             "#",
             "# Requires NGINX Ingress Controller",
             "# , see https://kubernetes.github.io/ingress-nginx/",
+            "# and cert-manager",
+            "# , see https://cert-manager.io/docs/usage/ingress/",
             "#",
             "# cat $TM_FILEPATH | yq",
             "# k apply -f $TM_FILEPATH",
