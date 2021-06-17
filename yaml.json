@@ -100,7 +100,7 @@
         ],
         "description": ""
     },
-    "helm release": {
+    "Helm release": {
         "prefix": "s-release",
         "body": [
             "#",
@@ -280,6 +280,20 @@
             "    alb.ingress.kubernetes.io/auth-session-cookie: AWSELBAuthSessionCookie # Is that needed?",
             "    alb.ingress.kubernetes.io/auth-session-timeout: '14400' # 4 hours",
             ""
+        ],
+        "description": ""
+    },
+    "K8s namespace": {
+        "prefix": "s-ns",
+        "body": [
+            "# cat $TM_FILEPATH | yq",
+            "# k apply -f $TM_FILEPATH",
+            "# k describe ns $1",
+            "# k delete ns $1",
+            "apiVersion: v1",
+            "kind: Namespace",
+            "metadata:",
+            "  name: $1"
         ],
         "description": ""
     }
