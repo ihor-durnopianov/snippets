@@ -446,6 +446,10 @@
             "",
             "k rollout restart deployment DEPLOYMENT NAME",
             "",
+            "k rollout restart daemonset DAEMONSET NAME",
+            "",
+            "watch -n 1 kubectl get pods --sort-by .metadata.creationTimestamp",
+            "",
             "k config view --minify | grep namespace:",
             "",
             "k config set-context --current --namespace=NAMESPACE",
@@ -489,6 +493,20 @@
             "show partitions `DATABASE.TABLE`",
             "",
             "drop table `DATABASE.TABLE`",
+            "```"
+        ],
+        "description": ""
+    },
+    "SQL stuff": {
+        "prefix": "s-sql",
+        "body": [
+            "# SQL stuff",
+            "",
+            "```sql",
+            "-- Replace \"some_name\" and \"some password\"",
+            "create user some_name with encrypted password 'some password';",
+            "create database some_name;",
+            "grant all privileges on database some_name to some_name;",
             "```"
         ],
         "description": ""
