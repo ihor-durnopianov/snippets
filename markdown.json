@@ -528,5 +528,22 @@
             "```"
         ],
         "description": ""
+    },
+    "Stuff that does not seem to fit anywhere else": {
+        "prefix": "s-misc",
+        "body": [
+            "# Misc stuff",
+            "",
+            "```bash",
+            "# Adopted from https://docs.python.org/3/library/secrets.html#recipes-and-best-practices",
+            "python -c '",
+            "import string, secrets",
+            "",
+            "print(\"\".join(",
+            "    secrets.choice(string.ascii_letters + string.digits) for i in range(8)",
+            "))'",
+            "```"
+        ],
+        "description": ""
     }
 }

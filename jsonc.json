@@ -16,7 +16,7 @@
             "// ",
             "// // Is jsonlint really needed?",
             "// aws cloudformation update-stack --stack-name $TM_FILENAME_BASE \\",
-            "//   --template-body \"$(cat stack.json | jsonlint -Sf)\" \\",
+            "//   --template-body \"$(cat $TM_FILENAME_BASE.json | jsonlint -Sf)\" \\",
             "//   --capabilities CAPABILITY_NAMED_IAM",
             "// ",
             "// aws cloudformation describe-stacks --stack-name $TM_FILENAME_BASE | jq .Stacks[].Outputs -r",
