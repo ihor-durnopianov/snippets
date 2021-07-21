@@ -103,9 +103,6 @@
     "Helm release": {
         "prefix": "s-release",
         "body": [
-            "#",
-            "#",
-            "# Related:",
             "# RELEASE=$TM_FILEPATH \\",
             "# && NAMESPACE=$(cat \\$RELEASE | yq .metadata.namespace -r) \\",
             "# && CHART_PATH=$(cat \\$RELEASE | yq .spec.chart.path -r) \\",
