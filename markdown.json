@@ -421,6 +421,8 @@
             "",
             "sls package",
             "",
+            "unzip -l .serverless/*.zip",
+            "",
             "sls deploy --verbose --force",
             "",
             "sls info",
