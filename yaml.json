@@ -109,6 +109,8 @@
             "# && RELEASE_NAME=$(cat \\$RELEASE | yq .spec.releaseName -r) \\",
             "# && cat \\$RELEASE | yq -y .spec.values \\",
             "#     | helm upgrade \\$RELEASE_NAME \\$CHART_PATH --namespace \\$NAMESPACE --values - --install --debug --dry-run",
+            "# helm list",
+            "# helm uninstall $release_name",
             "#",
             "# cat $TM_FILEPATH | yq",
             "# k apply -f $TM_FILEPATH",

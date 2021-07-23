@@ -600,6 +600,12 @@
             "insert into relation (id, name) values (0, 'a');",
             "delete from relation;",
             "drop table relation;",
+            "",
+            "alter table relation add column environment text;",
+            "select",
+            "    -- column_name, data_type, character_maximum_length",
+            "    *",
+            "from information_schema.columns where table_name ='relation';",
             "```"
         ],
         "description": ""
