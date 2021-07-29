@@ -5,6 +5,7 @@
             "//",
             "//",
             "// https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html",
+            "// https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html",
             "// https://theburningmonk.com/cloudformation-ref-and-getatt-cheatsheet/",
             "//",
             "// aws cloudformation list-stacks | jq .StackSummaries[].StackName -r",
