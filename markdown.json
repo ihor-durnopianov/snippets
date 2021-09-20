@@ -539,6 +539,8 @@
             "create user john with password 'secret'; -- 4 Redshift",
             "create database john;",
             "grant all privileges on database john to john;",
+            "revoke all privileges on database john from john;",
+            "drop database john;",
             "drop user john;",
             "",
             "-- GRANT/REVOKE cheatsheet",
