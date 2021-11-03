@@ -654,6 +654,8 @@
             "    );",
             "end $$ language plpgsql",
             "",
+            "select * from pg_proc where proname = 'make_or_execute_query'",
+            "",
             "select make_or_execute_query()",
             "select * from make_or_execute_query()",
             "drop function make_or_execute_query",
@@ -714,6 +716,10 @@
             "    union all select 1, 'Tanya'",
             ")",
             "select * from sample;",
+            "",
+            "-- Extensions",
+            "select * from pg_available_extensions;",
+            "select * from pg_extension;",
             "```"
         ],
         "description": ""
