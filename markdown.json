@@ -455,6 +455,10 @@
             "pyenv local",
             "",
             "pyenv local --unset",
+            "",
+            "pyenv activate zappa-init",
+            "",
+            "pyenv deactivate",
             "```"
         ],
         "description": ""
