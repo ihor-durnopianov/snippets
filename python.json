@@ -410,7 +410,7 @@
             "# import cufflinks as cf",
             "# cf.set_config_file(offline=True)",
             "",
-            "torch.set_default_tensor_type('torch.FloatTensor')"
+            "torch.set_default_tensor_type(\"torch.FloatTensor\")"
         ],
         "description": ""
     },
